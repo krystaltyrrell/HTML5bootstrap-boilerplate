@@ -1,0 +1,195 @@
+*{
+margin: 0
+padding: 0}
+
+
+/************fontface declarations****************************/
+
+@font-face {
+    font-family: 'ArualLight';
+        src: url('./type/arual-webfont.eot');
+    src: url('./type/arual-webfont.eot?#iefix') format('embedded-opentype'),
+             url('./type/arual-webfont.woff') format('woff'),
+              url('./type/arual-webfont.ttf') format('truetype'),
+               url('./type/arual-webfont.svg#ArualLight') format('svg');
+           font-weight: normal;
+       font-style: normal;}
+
+/********************body***********************************/
+body {
+        background: #eee; /*#260112;*/
+}
+
+/*****************content**********************************/
+#content{
+        /*border: 2px solid #000;*/
+        width: 960px;
+        margin: 0 auto;
+        position: relative;
+}
+
+
+/********************header***********************************/
+
+#header h1{
+        font-family: "ArualLight", arial, sans-serif;
+        font-size: 4em;
+        color: #222;
+        margin: 10px 0 10px 80px;
+}
+/********************navbar***********************************/
+ul{
+        margin: 0;
+        list-style: none;
+}
+#navbar{
+        border-bottom: 2px solid black;
+        border-top: 1px solid black;
+}
+#navbar li{
+        display: inline;
+}
+#navbar li a{
+        font: 2em "ArualLight", arial, sans-serif;
+        text-decoration: none;
+        color: black;
+}
+
+#navbar #welcome{
+        margin-left: 80px;
+}
+#navbar #meet{
+        margin-left: 80px;
+}
+#navbar #resources{
+        margin-left: 80px;
+}
+/*************************circle********************/
+.circle{
+        width: 350px;
+        height: 350px;
+        background: black;
+        -moz-border-radius: 175px;
+        -webkit-border-radius: 175px;
+        border-radius: 175px;
+        float: left;
+        position: absolute;
+        top: 350px;
+        left: 75px;
+}
+/******************about***********************/
+#about{
+        width: 200px;
+        color: white;
+        margin: 0 auto;
+        padding-top: 35px;
+        font: .9em arial, sans-serif;
+        font-weight: bold;
+}
+#about p{
+        margin-top: 40px;
+        padding-left: 8px;
+        text-align: left;
+}
+
+/***************meeting*******************/
+#meetups{
+        width: 400px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        position: absolute;
+        top: 150px;
+        left: 250px;
+        font-family: arial, sans-serif;
+}
+.day{
+        display: inline-block;
+        width: 120px;
+        text-align: right;
+        font-weight: bold;
+}
+.place{
+        margin: 0;
+        padding-left: 10px;
+        display: inline;
+        width: 270px;
+}
+.time{
+        margin-left: 135px;
+}
+
+
+/**************links*********************/
+#links *{
+        margin: 0;
+        padding: 0;
+}
+#links{
+        width: 350px;
+        float: left;
+        position: absolute;
+        top: 600px;
+        left: 550px;
+        background: #fff;
+        font-family: arial, sans-serif;
+        border: 1px solid #000;
+        padding: 8px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        }
+
+#links a{
+        text-decoration: none;
+        }
+#links ul{
+        padding-top: 5px;
+        text-align: center;
+}
+#links li{
+        width: 90px;
+        padding: 2px;
+        height: 50px;
+        display: inline-block;
+        border: 1px solid #000;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 0;
+}
+#links li a:link, #links li a:visited, #meetups a:link, #meetups a:visited {
+        color: #000;
+}
+#links li:hover, #links li:active{
+        background: #e89b94;
+}
+
+/*************lines*********************/
+#line1{
+position: absolute;
+left: 175px;
+}
+#line2{
+position: absolute;
+left: 388px;
+}
+#line3{
+position: absolute;
+left: 610px;
+z-index: -1;
+}
+
+/**************footer***********************/
+#footer{
+        border-top: 1px solid black; 
+        position: absolute;
+        top: 950px;
+        display: block;
+        width: 960px;
+}
+
+#footer p{
+        font-variant: small-caps;
+}
